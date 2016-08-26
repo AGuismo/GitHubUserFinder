@@ -1,0 +1,23 @@
+{
+  "name": "GitHubUserFinder",
+  "version": "0.0.1",
+  "description": "A (really) simple GitHub users finder built with React/Redux",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AGuismo/GitHubUserFinder.git"
+  },
+  "keywords": [
+    "React",
+    "Redux",
+    "GitHub"
+  ],
+  "author": "AGuismo",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/AGuismo/GitHubUserFinder/issues"
+  }
+}
