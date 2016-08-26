@@ -174,8 +174,8 @@ var UserListRow = React.createClass({
   render: function() {
     return (
 
-      <ListGroupItem href="#userDetail">
-        <Row onClick={this.userSelected}>
+      <ListGroupItem href="#userDetail" onClick={this.userSelected}>
+        <Row>
           <Col md={4} xs={2}>         
               <Image src={this.props.user.avatar_url} circle className="userImgMin" />
           </Col>
@@ -341,21 +341,17 @@ var GitHubUserFinder = React.createClass({
     this.state.firstPass = false;
 
     return (
-    	<Grid>
-	    	<Row>
-		    	<Col md={(focusedUser != null) ? 5 : 8 } mdOffset={(focusedUser != null) ? 1 : 2 } xs={12}>
-					  <div className="userFinder">
-  						<h1>GitHub User Finder</h1>
+      <Grid>
+        <Row>
+          <Col md={(focusedUser != null) ? 5 : 8 } mdOffset={(focusedUser != null) ? 1 : 2 } xs={12}>
+            <div className="userFinder">
+              <h1>GitHub User Finder</h1>
               <SearchBar />
-              
               {usersList}
-
-					  </div>
-				  </Col>
-
-            {focusedUser}
-
-		    </Row>
+            </div>
+          </Col>
+          {focusedUser}
+        </Row>
         <Row>
           <h3>By AGuismo - 2016</h3>
         </Row>
