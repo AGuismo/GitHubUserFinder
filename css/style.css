@@ -1,0 +1,25 @@
+body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; background-color: #f2f2f2; font-size: 2em;  margin: 0; padding: 30px; }
+
+h1, h2, h3, h4 { font-weight: bold; margin: 15px 0 15px; padding: 0; }
+
+h1 { border-bottom: 1px solid #ddd; font-size: 2.2em; text-align: center; }
+
+h3 {  font-size: 0.5em; text-align: center; margin-top: 30px; }
+
+p, link { text-align: center; }
+
+button { width: 100%; }
+
+.searchBar { padding: 5px 0px 5px 0px; margin-bottom: 10px; border-color: black; background-color: #ffffff; box-shadow: 6px 6px 9px #aaa; }
+
+.userImgMin { width: 42px; text-align: center; display: block; margin: 0px auto;}
+
+.userImgMed { width: 80px; display: block; margin: 10px auto; padding-bottom: 8px; }
+
+.usersList { box-shadow: 2px 2px 3px #aaa; }
+
+.focusedUserDetails { padding: 4px 5px 4px 20px; margin-top: 8px; border-width: 0px; border-style: solid; border-color: black; background-color: #ffffff; box-shadow: 6px 6px 9px #aaa; }
+
+.searchButton { text-align: center; margin-left: 0; padding-left: 0; }
+
+.alignCenter { text-align: center; }
