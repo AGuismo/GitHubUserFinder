@@ -4,6 +4,26 @@ import React from 'react'
 import { Row, Col, Button, Image, Form, FormControl, ListGroup, ListGroupItem } from 'react-bootstrap'
 
 
+// Formating GitHub API returns
+const displayDetails = [
+
+  { key: "avatar_url", displayText: "1" },
+  { key: "html_url", displayText: "2" },
+  { key: "id", displayText: "Id:" },
+  { key: "name", displayText: "Name:" },
+  { key: "company", displayText: "Company:" },
+  { key: "blog", displayText: "Blog:" },//
+  { key: "location", displayText: "Location:" },
+  { key: "created_at", displayText: "Created:" },
+  { key: "email", displayText: "Email:" },
+  { key: "bio", displayText: "Bio:" },
+  { key: "public_repos", displayText: "Public repos:" },
+  { key: "public_gists", displayText: "Public gists:" },
+  { key: "followers", displayText: "Followers:" },
+  { key: "following", displayText: "Following:" },
+
+];
+
 export var UserList = React.createClass({
   handleUserRowClick: function(userLogin) {
     this.props.handleSelectedUserClick(userLogin);
@@ -51,29 +71,8 @@ export var UserListRow = React.createClass({
   }
 });
 
-//export UserListRow;
-
 export var UserDetails = React.createClass({
   render: function() {
-
-    const displayDetails = [
-
-      { key: "avatar_url", displayText: "1" },
-      { key: "html_url", displayText: "2" },
-      { key: "id", displayText: "Id:" },
-      { key: "name", displayText: "Name:" },
-      { key: "company", displayText: "Company:" },
-      { key: "blog", displayText: "Blog:" },//
-      { key: "location", displayText: "Location:" },
-      { key: "created_at", displayText: "Created:" },
-      { key: "email", displayText: "Email:" },
-      { key: "bio", displayText: "Bio:" },
-      { key: "public_repos", displayText: "Public repos:" },
-      { key: "public_gists", displayText: "Public gists:" },
-      { key: "followers", displayText: "Followers:" },
-      { key: "following", displayText: "Following:" },
-
-    ];
 
     let details = new Array();
 
